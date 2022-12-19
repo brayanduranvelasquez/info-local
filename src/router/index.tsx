@@ -6,6 +6,7 @@ import Head from '../shared/components/Head';
 
 // Pages Components
 const Home: LazyExoticComponent<React.FC> = lazy(() => import('../pages/home'));
+const Categories: LazyExoticComponent<React.FC> = lazy(() => import('../pages/categories'));
 
 export default function RouterApp(): JSX.Element {
   return (
@@ -14,8 +15,17 @@ export default function RouterApp(): JSX.Element {
         path="/"
         element={
           <Suspense>
-            <Head title="Home" />
+            <Head title="InfoLocal" />
             <Home />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/categories"
+        element={
+          <Suspense>
+            <Head title="Categorias" />
+            <Categories />
           </Suspense>
         }
       />
