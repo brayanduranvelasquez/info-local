@@ -1,6 +1,6 @@
-## Template base
+## Info local
 
-Template base.
+Info local
 
 ### Construido en
 
@@ -34,21 +34,13 @@ Ruta inicial.
 
 ### Dependencias
 
-1. [React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/)
-2. [Material UI](https://mui.com/)
-3. [Material UI Icons](https://mui.com/material-ui/material-icons/#main-content)
-4. [React Helmet](https://www.npmjs.com/package/react-helmet)
-5. [React Hook Forms](https://react-hook-form.com/)
-6. [React Router Dom](https://reactrouter.com/en/v6.3.0/)
-7. [React Toastify](https://fkhadra.github.io/react-toastify/introduction/)
-8. [React Multi Carousel](https://www.npmjs.com/package/react-multi-carousel)
-9. [React Scratchcard V2](https://www.npmjs.com/package/react-scratchcard-v2)
-10. [React To Print](https://github.com/gregnb/react-to-print#readme)
-11. [Axios](https://axios-http.com/)
-12. [Sweet Alert 2](https://sweetalert2.github.io/)
-13. [Eslint](https://github.com/eslint/eslint)
-14. [Prettier](https://github.com/prettier/prettier)
-15. [Mui-datatables](https://www.npmjs.com/package/mui-datatables)
+1. [Material UI](https://mui.com/)
+2. [Material UI Icons](https://mui.com/material-ui/material-icons/#main-content)
+3. [React Helmet](https://www.npmjs.com/package/react-helmet)
+4. [React Router Dom](https://reactrouter.com/en/v6.3.0/)
+5. [React Multi Carousel](https://www.npmjs.com/package/react-multi-carousel)
+6. [Eslint](https://github.com/eslint/eslint)
+7. [Prettier](https://github.com/prettier/prettier)
 
 ### Eslint y Prettier
 
