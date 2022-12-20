@@ -10,7 +10,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 import Footer from '../../../../../../../../shared/components/Footer';
 import Header from '../../../../../../../../shared/components/Header';
-import IconsBox from './components/IconsBox';
+import IconBox from './components/IconBox';
 import SocialMedia from './components/SocialMedia';
 import Breadcrumb from './components/Breadcrumb';
 import { RESPONSIVE } from './consts/RESPONSIVE';
@@ -50,14 +50,14 @@ export default function CasaDelCuadroPage() {
           </Typography>
         </Stack>
 
-        <IconsBox
+        <IconBox
           icon={<HomeRepairServiceIcon fontSize="large" />}
           message="Calle El Paraiso, edificio Las Palmeras, Maturin, Monagas. "
         />
-        <IconsBox icon={<HomeRepairServiceIcon fontSize="large" />} message="De 7:00am a 12pm y de 2pm a 7:00pm" />
-        <IconsBox icon={<HomeRepairServiceIcon fontSize="large" />} message="Efectivo, transferencia, pago movil." />
-        <IconsBox icon={<HomeRepairServiceIcon fontSize="large" />} message="Números de telefonos: (0412) 123 4567." />
-        <IconsBox icon={<HomeRepairServiceIcon fontSize="large" />} message="Correos electrónicos: example@gmail.com" />
+        <IconBox icon={<HomeRepairServiceIcon fontSize="large" />} message="De 7:00am a 12pm y de 2pm a 7:00pm" />
+        <IconBox icon={<HomeRepairServiceIcon fontSize="large" />} message="Efectivo, transferencia, pago movil." />
+        <IconBox icon={<HomeRepairServiceIcon fontSize="large" />} message="Números de telefonos: (0412) 123 4567." />
+        <IconBox icon={<HomeRepairServiceIcon fontSize="large" />} message="Correos electrónicos: example@gmail.com" />
 
         <Divider sx={{ marginTop: 3 }} />
 

@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Pagination, Stack, Typography } from '@mui/material';
+import { Container, Grid, Pagination, Stack, Typography } from '@mui/material';
 
 // Local
 import Header from '../../../../../../shared/components/Header';

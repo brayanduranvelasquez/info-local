@@ -5,7 +5,7 @@ interface IProps {
   message: string;
 }
 
-export default function IconsBox(props: IProps) {
+export default function IconBox(props: IProps) {
   return (
     <Stack direction="row" my={3} ml={3} columnGap={1} justifyContent="flex-start" alignItems="center">
       {props.icon}
