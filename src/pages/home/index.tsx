@@ -51,7 +51,7 @@ export default function Page() {
         </Button>
       </Box>
 
-      <Box sx={{ minHeight: '100%', background: '#2196F3', color: '#fff', textAlign: 'center', paddingY: 10 }}>
+      <Box sx={{ minHeight: '100%', background: '#1769AA', color: '#fff', textAlign: 'center', paddingY: 10 }}>
         <Stack justifyContent="center" alignItems="center">
           <Typography variant="h3" fontWeight={800}>
             ¿Que ofrecemos para ti?
