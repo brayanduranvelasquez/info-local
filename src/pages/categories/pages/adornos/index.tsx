@@ -25,11 +25,11 @@ export default function AdornosPage() {
           </Stack>
 
           <Grid container direction="row">
-            <ButtonCategory title={'Cuadros'} url={'/categories/cuadros'} />
-            <ButtonCategory title={'Piñaterías'} url={'/categories/piñaterias'} />
-            <ButtonCategory title={'Floreros'} url={'/categories/floreros'} />
-            <ButtonCategory title={'Luces'} url={'/categories/luces'} />
-            <ButtonCategory title={'Tapicería'} url={'/categories/tapiceria'} />
+            <ButtonCategory title={'Cuadros'} url={'/categories/adornos/cuadros'} />
+            <ButtonCategory title={'Piñaterías'} url={'/categories/adornos/piñaterias'} />
+            <ButtonCategory title={'Floreros'} url={'/categories/adornos/floreros'} />
+            <ButtonCategory title={'Luces'} url={'/categories/adornos/luces'} />
+            <ButtonCategory title={'Tapicería'} url={'/categories/adornos/tapiceria'} />
           </Grid>
         </Container>
       </Box>

@@ -7,12 +7,14 @@ import Head from '../shared/components/Head';
 // Pages Components
 const Home: LazyExoticComponent<React.FC> = lazy(() => import('../pages/home'));
 const Categories: LazyExoticComponent<React.FC> = lazy(() => import('../pages/categories'));
-const Locals: LazyExoticComponent<React.FC> = lazy(() => import('../pages/locals'));
+const Cuadros: LazyExoticComponent<React.FC> = lazy(() => import('../pages/categories/pages/adornos/pages/cuadros'));
 const About: LazyExoticComponent<React.FC> = lazy(() => import('../pages/about'));
 const Politics: LazyExoticComponent<React.FC> = lazy(() => import('../pages/politics'));
 
 const Adornos: LazyExoticComponent<React.FC> = lazy(() => import('../pages/categories/pages/adornos'));
-const CasaDelCuadro: LazyExoticComponent<React.FC> = lazy(() => import('../pages/casa-del-cuadro'));
+const CasaDelCuadro: LazyExoticComponent<React.FC> = lazy(
+  () => import('../pages/categories/pages/adornos/pages/cuadros/pages/casa-del-cuadro'),
+);
 
 interface IProps {
   children: JSX.Element;
@@ -61,11 +63,20 @@ export default function RouterApp(): JSX.Element {
           }
         />
         <Route
-          path="/locals"
+          path="/categories/adornos/cuadros"
           element={
             <Suspense>
               <Head title="Locales" />
-              <Locals />
+              <Cuadros />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/categories/adornos/cuadros/casa-del-cuadro"
+          element={
+            <Suspense>
+              <Head title="Casa del cuadro" />
+              <CasaDelCuadro />
             </Suspense>
           }
         />
@@ -84,15 +95,6 @@ export default function RouterApp(): JSX.Element {
             <Suspense>
               <Head title="Politicas de privacidad" />
               <Politics />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/casa-del-cuadro"
-          element={
-            <Suspense>
-              <Head title="Casa del cuadro" />
-              <CasaDelCuadro />
             </Suspense>
           }
         />

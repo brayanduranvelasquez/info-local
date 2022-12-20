@@ -1,6 +1,6 @@
 import { Stack, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { StyledLink } from '../../../shared/styled-components/StyledLink';
+import { StyledLink } from '../../../../../../../shared/styled-components/StyledLink';
 
 export default function Breadcrumb() {
   const navigate = useNavigate();
@@ -19,9 +19,17 @@ export default function Breadcrumb() {
         /
       </Typography>
 
-      <Typography variant="h5" fontWeight="bold" onClick={() => navigate('/categories')}>
+      <StyledLink variant="h5" fontWeight="bold" onClick={() => navigate('/categories')}>
         Categorías
+      </StyledLink>
+
+      <Typography variant="h5" fontWeight="bold">
+        /
       </Typography>
+
+      <StyledLink variant="h5" fontWeight="bold" onClick={() => navigate('/categories/adornos')}>
+        Adornos
+      </StyledLink>
 
       <Typography variant="h5" fontWeight="bold">
         /

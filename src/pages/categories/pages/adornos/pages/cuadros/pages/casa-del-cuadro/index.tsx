@@ -8,8 +8,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-import Footer from '../../shared/components/Footer';
-import Header from '../../shared/components/Header';
+import Footer from '../../../../../../../../shared/components/Footer';
+import Header from '../../../../../../../../shared/components/Header';
 import IconsBox from './components/IconsBox';
 import SocialMedia from './components/SocialMedia';
 import Breadcrumb from './components/Breadcrumb';

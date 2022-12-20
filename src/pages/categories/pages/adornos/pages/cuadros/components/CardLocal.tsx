@@ -7,8 +7,9 @@ interface IProps {
   url: string;
 }
 
-export const BoxLocals = (props: IProps) => {
+export default function CardLocal(props: IProps) {
   const navigate = useNavigate();
+
   return (
     <Grid item xs={12} sm={6} md={4} display="flex" justifyContent="center" alignItems="center">
       <Card
@@ -24,18 +25,26 @@ export const BoxLocals = (props: IProps) => {
           borderRadius: 1,
           margin: 2,
           paddingBottom: 2,
+          transition: '0.3s all',
+
+          '&:hover': {
+            transform: 'scale(1.05)',
+          },
         }}
       >
         <Box component="img" src={props.img} sx={{ width: '100%', height: '150%' }} />
+
         <CardContent>
           <Typography variant="h4" fontWeight="bold">
             {props.title}
           </Typography>
+
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents
-            except Antarctica
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate impedit dolore ipsum culpa, laborum, nemo
+            eveniet temporibus.
           </Typography>
         </CardContent>
+
         <CardActions>
           <Button variant="contained" color="primary" onClick={() => navigate(`${props.url}`)}>
             Ir
@@ -44,4 +53,4 @@ export const BoxLocals = (props: IProps) => {
       </Card>
     </Grid>
   );
-};
+}
