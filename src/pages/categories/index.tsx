@@ -1,20 +1,21 @@
-import { Box, Container, Grid, Stack, Typography } from '@mui/material';
+import { Box, Container, Grid, Pagination, Stack, Typography } from '@mui/material';
+
+// Local
 import Header from '../../shared/components/Header';
 import Footer from '../../shared/components/Footer';
 import InputSearch from '../../shared/components/InputSearch';
 import BoxCategory from './components/BoxCategory';
-import { BoxPaginate } from '../../shared/components/BoxPaginate';
+import Breadcrumb from './components/Breadcrumb';
 
-export default function Page() {
+export default function CategoriesPage() {
   return (
     <>
       <Header />
 
-      <Box sx={{ minHeight: '100%', color: '#000', paddingY: 5 }}>
+      <Box sx={{ minHeight: '100%', color: '#000' }}>
         <Container>
-          <Typography variant="h6" fontWeight={500}>
-            Actualmente te encuentras en: Inicio / Categorias
-          </Typography>
+          <Breadcrumb />
+
           <Typography variant="h4" fontWeight={800}>
             Todas las Categorías (30+)
           </Typography>
@@ -38,7 +39,9 @@ export default function Page() {
         </Container>
       </Box>
 
-      <BoxPaginate />
+      <Stack justifyContent="center" alignItems="center" my={5}>
+        <Pagination count={10} variant="outlined" shape="rounded" size="large" />
+      </Stack>
 
       <Footer />
     </>
