@@ -1,35 +1,30 @@
 import { Box, Grid, Paper, Typography } from '@mui/material';
 
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { StyledButtonCategory } from '../styled-components/StyledButtonCategory.ts';
+import { useNavigate } from 'react-router-dom';
 
 interface IProps {
   title: string;
+  url: string;
 }
 
-export default function BoxCategory(props: IProps) {
+export default function ButtonCategory(props: IProps) {
+  const navigate = useNavigate();
+
   return (
     <Grid item xs={12} md={6}>
-      <Paper
-        elevation={10}
-        sx={{
-          background: '#fff',
-          width: '90%',
-          height: '100px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: 5,
-          margin: 2,
-        }}
-      >
-        <Box sx={{ width: '10%' }}></Box>
+      <StyledButtonCategory elevation={5} onClick={() => navigate(props.url)}>
+        <Box sx={{ width: '10%' }} />
+
         <Typography variant="h4" fontWeight="bold" sx={{ width: '100%', textAlign: 'center' }}>
           {props.title}
         </Typography>
+
         <ArrowForwardIosIcon
           sx={{ fontSize: '30px', width: '10%', marginLeft: 2, display: 'flex', justifyContent: 'flex-end' }}
         />
-      </Paper>
+      </StyledButtonCategory>
     </Grid>
   );
 }

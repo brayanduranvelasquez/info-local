@@ -1,8 +1,7 @@
-import { Box, Container, Grid, Stack, Typography } from '@mui/material';
+import { Box, Container, Grid, Pagination, Stack, Typography } from '@mui/material';
 import Header from '../../shared/components/Header';
 import Footer from '../../shared/components/Footer';
 import InputSearch from '../../shared/components/InputSearch';
-import { BoxPaginate } from '../../shared/components/BoxPaginate';
 import { BoxLocals } from './components/BoxLocals';
 
 export default function Page() {
@@ -34,7 +33,9 @@ export default function Page() {
         </Container>
       </Box>
 
-      <BoxPaginate />
+      <Stack justifyContent="center" alignItems="center" my={5}>
+        <Pagination count={10} variant="outlined" shape="rounded" size="large" />
+      </Stack>
 
       <Footer />
     </>

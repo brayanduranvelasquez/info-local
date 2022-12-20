@@ -10,6 +10,8 @@ const Categories: LazyExoticComponent<React.FC> = lazy(() => import('../pages/ca
 const Locals: LazyExoticComponent<React.FC> = lazy(() => import('../pages/locals'));
 const About: LazyExoticComponent<React.FC> = lazy(() => import('../pages/about'));
 const Politics: LazyExoticComponent<React.FC> = lazy(() => import('../pages/politics'));
+
+const Adornos: LazyExoticComponent<React.FC> = lazy(() => import('../pages/categories/pages/adornos'));
 const CasaDelCuadro: LazyExoticComponent<React.FC> = lazy(() => import('../pages/casa-del-cuadro'));
 
 interface IProps {
@@ -45,6 +47,16 @@ export default function RouterApp(): JSX.Element {
             <Suspense>
               <Head title="Categorias" />
               <Categories />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/categories/adornos"
+          index
+          element={
+            <Suspense>
+              <Head title="Adornos" />
+              <Adornos />
             </Suspense>
           }
         />

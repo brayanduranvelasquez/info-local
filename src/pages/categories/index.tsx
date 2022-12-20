@@ -4,7 +4,7 @@ import { Box, Container, Grid, Pagination, Stack, Typography } from '@mui/materi
 import Header from '../../shared/components/Header';
 import Footer from '../../shared/components/Footer';
 import InputSearch from '../../shared/components/InputSearch';
-import BoxCategory from './components/BoxCategory';
+import ButtonCategory from './components/ButtonCategory';
 import Breadcrumb from './components/Breadcrumb';
 
 export default function CategoriesPage() {
@@ -25,16 +25,16 @@ export default function CategoriesPage() {
           </Stack>
 
           <Grid container direction="row">
-            <BoxCategory title={'Adornos'} />
-            <BoxCategory title={'Repuestos'} />
-            <BoxCategory title={'Comida'} />
-            <BoxCategory title={'Medicina'} />
-            <BoxCategory title={'Vestimenta'} />
-            <BoxCategory title={'Electrodomesticos'} />
-            <BoxCategory title={'Eventos'} />
-            <BoxCategory title={'Arte'} />
-            <BoxCategory title={'Ferreteria'} />
-            <BoxCategory title={'Sonido'} />
+            <ButtonCategory title={'Adornos'} url={'/categories/adornos'} />
+            <ButtonCategory title={'Repuestos'} url={'/categories/repuestos'} />
+            <ButtonCategory title={'Comida'} url={'/categories/comida'} />
+            <ButtonCategory title={'Medicina'} url={'/categories/medicina'} />
+            <ButtonCategory title={'Vestimenta'} url={'/categories/vestimenta'} />
+            <ButtonCategory title={'Electrodomésticos'} url={'/categories/electrodomesticos'} />
+            <ButtonCategory title={'Eventos'} url={'/categories/eventos'} />
+            <ButtonCategory title={'Arte'} url={'/categories/arte'} />
+            <ButtonCategory title={'Ferretería'} url={'/categories/ferreteria'} />
+            <ButtonCategory title={'Sonido'} url={'/categories/sonido'} />
           </Grid>
         </Container>
       </Box>
