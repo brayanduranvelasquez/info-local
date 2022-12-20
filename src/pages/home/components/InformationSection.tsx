@@ -1,5 +1,4 @@
 import { Box, Grid, Typography } from '@mui/material';
-import React from 'react';
 
 interface IProps {
   icon: JSX.Element;
@@ -8,19 +7,19 @@ interface IProps {
 
 export default function InformationSection(props: IProps) {
   return (
-    <Grid item xs={12} md={3} display="flex" justifyContent="center" alignItems="center">
+    <Grid item xs={12} md={4} display="flex" justifyContent="center" alignItems="center">
       <Box
         sx={{
           padding: 2,
-          minWidth: '200px',
-          height: '250px',
+          minWidth: '300px',
+          height: '100%',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
         }}
       >
-        {props.icon}
+        <Box marginBottom={2}>{props.icon}</Box>
         <Typography>{props.message}</Typography>
       </Box>
     </Grid>
