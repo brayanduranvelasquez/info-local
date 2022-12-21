@@ -142,7 +142,7 @@ export default function Header() {
 
             <Stack>
               <StyledStackLinks sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
-                <StyledLinkNav onClick={() => navigate('/categories')}>Categorias</StyledLinkNav>
+                <StyledLinkNav onClick={() => navigate('/categories')}>Categorías</StyledLinkNav>
                 <StyledLinkNav onClick={() => navigate('/about')}>Acerca de</StyledLinkNav>
                 <Button variant="contained" color="primary">
                   Registrar

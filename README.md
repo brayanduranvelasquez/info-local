@@ -26,7 +26,8 @@ Ruta inicial.
 ### Otros comandos
 
 - `dev-host`: Para poder mostrar la aplicación mediante la ruta del host local.
-- `build`: Desplegar la aplicacion para producción y creará una carpeta llamada dist.
+- `build`: Construir la aplicacion para producción y creará una carpeta llamada dist.
+- `deploy`: Desplegar la carpeta dist a github pages.
 - `lint`: Verificar errores en el código.
 - `lint-fix`: Tratar de solucionar los errores que se presentan.
 - `preview`: Arrancará el servidor web estático local que sirve los archivos desde dist en http://localhost:4173.

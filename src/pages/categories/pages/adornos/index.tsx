@@ -10,8 +10,6 @@ import Breadcrumb from './components/Breadcrumb';
 export default function AdornosPage() {
   return (
     <>
-      <Header />
-
       <Box sx={{ minHeight: '100%', color: '#000' }}>
         <Container>
           <Breadcrumb />
@@ -26,10 +24,10 @@ export default function AdornosPage() {
 
           <Grid container direction="row">
             <ButtonCategory title={'Cuadros'} url={'/categories/adornos/cuadros'} />
-            <ButtonCategory title={'Piñaterías'} url={'/categories/adornos/piñaterias'} />
-            <ButtonCategory title={'Floreros'} url={'/categories/adornos/floreros'} />
-            <ButtonCategory title={'Luces'} url={'/categories/adornos/luces'} />
-            <ButtonCategory title={'Tapicería'} url={'/categories/adornos/tapiceria'} />
+            <ButtonCategory title={'Piñaterías'} />
+            <ButtonCategory title={'Floreros'} />
+            <ButtonCategory title={'Luces'} />
+            <ButtonCategory title={'Tapicería'} />
           </Grid>
         </Container>
       </Box>
@@ -37,8 +35,6 @@ export default function AdornosPage() {
       <Stack justifyContent="center" alignItems="center" my={5}>
         <Pagination count={10} variant="outlined" shape="rounded" size="large" />
       </Stack>
-
-      <Footer />
     </>
   );
 }

@@ -6,7 +6,7 @@ export default function InputSearch() {
     <>
       <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 2, width: '80%' }}>
         <TextField
-          placeholder="Buscar..."
+          placeholder="Buscar un local, negocio, empresa, categoría, subcategoría..."
           sx={{ background: '#fff', borderRadius: '5px', maxWidth: '480px' }}
           fullWidth
         />

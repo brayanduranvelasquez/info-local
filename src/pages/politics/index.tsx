@@ -1,25 +1,19 @@
 import { Stack, Typography, Container } from '@mui/material';
-
-import Footer from '../../shared/components/Footer';
-import Header from '../../shared/components/Header';
+import Breadcrumb from './components/Breadcrumb';
 
 export default function PoliticsPage() {
   return (
     <>
-      <Header />
-
       <Container sx={{ marginY: 2 }}>
-        <Typography variant="h6" fontWeight={500}>
-          Actualmente te encuentras en: Politicas de privacidad
-        </Typography>
+        <Breadcrumb />
 
         <Stack my={3}>
           <Typography fontWeight="bold" variant="h3">
-            Politicas de privacidad
+            Políticas de privacidad
           </Typography>
 
           <Typography variant="h5" color="gray">
-            Ultima actualizacion: 27 de Sep, 2022
+            Última actualización: 27 de Sep, 2022
           </Typography>
         </Stack>
 
@@ -118,8 +112,6 @@ export default function PoliticsPage() {
           illo vero ducimus quia esse, veniam, odit eos! Vitae cumque odio excepturi sit repellat. Explicabo, libero?
         </Typography>
       </Container>
-
-      <Footer />
     </>
   );
 }

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 interface IProps {
   img: string;
   title: string;
-  url: string;
+  url?: string;
 }
 
 export default function CardLocal(props: IProps) {
@@ -46,7 +46,7 @@ export default function CardLocal(props: IProps) {
         </CardContent>
 
         <CardActions>
-          <Button variant="contained" color="primary" onClick={() => navigate(`${props.url}`)}>
+          <Button variant="contained" color="primary" onClick={() => props.url && navigate(props.url)}>
             Ir
           </Button>
         </CardActions>
