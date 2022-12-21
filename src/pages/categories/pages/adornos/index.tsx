@@ -10,8 +10,6 @@ import Breadcrumb from './components/Breadcrumb';
 export default function AdornosPage() {
   return (
     <>
-      <Header />
-
       <Box sx={{ minHeight: '100%', color: '#000' }}>
         <Container>
           <Breadcrumb />
@@ -37,8 +35,6 @@ export default function AdornosPage() {
       <Stack justifyContent="center" alignItems="center" my={5}>
         <Pagination count={10} variant="outlined" shape="rounded" size="large" />
       </Stack>
-
-      <Footer />
     </>
   );
 }

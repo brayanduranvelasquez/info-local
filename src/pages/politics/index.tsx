@@ -1,13 +1,8 @@
 import { Stack, Typography, Container } from '@mui/material';
 
-import Footer from '../../shared/components/Footer';
-import Header from '../../shared/components/Header';
-
 export default function PoliticsPage() {
   return (
     <>
-      <Header />
-
       <Container sx={{ marginY: 2 }}>
         <Typography variant="h6" fontWeight={500}>
           Actualmente te encuentras en: Politicas de privacidad
@@ -118,8 +113,6 @@ export default function PoliticsPage() {
           illo vero ducimus quia esse, veniam, odit eos! Vitae cumque odio excepturi sit repellat. Explicabo, libero?
         </Typography>
       </Container>
-
-      <Footer />
     </>
   );
 }

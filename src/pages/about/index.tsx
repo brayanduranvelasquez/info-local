@@ -1,8 +1,6 @@
 import { Box, Grid, Stack, Typography, Button, TextField, Container } from '@mui/material';
 
 // Local
-import Header from '../../shared/components/Header';
-import Footer from '../../shared/components/Footer';
 import image1 from './assets/1.png';
 import image2 from './assets/2.png';
 import image3 from './assets/3.png';
@@ -10,8 +8,6 @@ import image3 from './assets/3.png';
 export default function AboutPage() {
   return (
     <>
-      <Header />
-
       <Box sx={{ minHeight: '100%', color: '#000', textAlign: 'center', paddingY: 10 }}>
         <Grid container direction="row">
           <Grid item xs={12} lg={6}>
@@ -196,8 +192,6 @@ export default function AboutPage() {
           </Grid>
         </Container>
       </Box>
-
-      <Footer />
     </>
   );
 }

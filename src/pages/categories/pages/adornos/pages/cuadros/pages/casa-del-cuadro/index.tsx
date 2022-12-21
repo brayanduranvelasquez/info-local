@@ -8,8 +8,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-import Footer from '../../../../../../../../shared/components/Footer';
-import Header from '../../../../../../../../shared/components/Header';
+// Local
 import IconBox from './components/IconBox';
 import SocialMedia from './components/SocialMedia';
 import Breadcrumb from './components/Breadcrumb';
@@ -22,7 +21,6 @@ import imageExample3 from './assets/3.jpg';
 export default function CasaDelCuadroPage() {
   return (
     <>
-      <Header />
       <Carousel responsive={RESPONSIVE}>
         <Box height="100vh" maxHeight={650} sx={{ backgroundImage: `url(${imageExample1})` }} />
         <Box height="100vh" maxHeight={650} sx={{ backgroundImage: `url(${imageExample2})` }} />
@@ -69,8 +67,6 @@ export default function CasaDelCuadroPage() {
           <SocialMedia icon={<YouTubeIcon fontSize="large" />} message={'Ir a Youtube'} />
         </Grid>
       </Container>
-
-      <Footer />
     </>
   );
 }

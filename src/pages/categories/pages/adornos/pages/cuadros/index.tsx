@@ -1,8 +1,6 @@
 import { Container, Grid, Pagination, Stack, Typography } from '@mui/material';
 
 // Local
-import Header from '../../../../../../shared/components/Header';
-import Footer from '../../../../../../shared/components/Footer';
 import InputSearch from '../../../../../../shared/components/InputSearch';
 import CardLocal from './components/CardLocal';
 import Breadcrumb from './components/Breadcrumb';
@@ -20,8 +18,6 @@ import Local9IMG from './assets/local9.png';
 export default function CuadrosPage() {
   return (
     <>
-      <Header />
-
       <Container>
         <Breadcrumb />
         <Typography variant="h4" fontWeight={800}>
@@ -48,8 +44,6 @@ export default function CuadrosPage() {
       <Stack justifyContent="center" alignItems="center" my={5}>
         <Pagination count={10} variant="outlined" shape="rounded" size="large" />
       </Stack>
-
-      <Footer />
     </>
   );
 }
