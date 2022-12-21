@@ -24,15 +24,15 @@ export default function CategoriesPage() {
 
           <Grid container direction="row">
             <ButtonCategory title={'Adornos'} url={'/categories/adornos'} />
-            <ButtonCategory title={'Repuestos'} url={'/categories/repuestos'} />
-            <ButtonCategory title={'Comida'} url={'/categories/comida'} />
-            <ButtonCategory title={'Medicina'} url={'/categories/medicina'} />
-            <ButtonCategory title={'Vestimenta'} url={'/categories/vestimenta'} />
-            <ButtonCategory title={'Electrodomésticos'} url={'/categories/electrodomesticos'} />
-            <ButtonCategory title={'Eventos'} url={'/categories/eventos'} />
-            <ButtonCategory title={'Arte'} url={'/categories/arte'} />
-            <ButtonCategory title={'Ferretería'} url={'/categories/ferreteria'} />
-            <ButtonCategory title={'Sonido'} url={'/categories/sonido'} />
+            <ButtonCategory title={'Repuestos'} />
+            <ButtonCategory title={'Comida'} />
+            <ButtonCategory title={'Medicina'} />
+            <ButtonCategory title={'Vestimenta'} />
+            <ButtonCategory title={'Electrodomésticos'} />
+            <ButtonCategory title={'Eventos'} />
+            <ButtonCategory title={'Arte'} />
+            <ButtonCategory title={'Ferretería'} />
+            <ButtonCategory title={'Sonido'} />
           </Grid>
         </Container>
       </Box>

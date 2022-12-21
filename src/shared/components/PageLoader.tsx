@@ -11,7 +11,7 @@ export default function PageLoader() {
 
   return (
     <>
-      <LoadingBar color={theme.palette.primary.main} ref={ref} />
+      <LoadingBar color={theme.palette.primary.main} ref={ref} height={3.5} />
 
       <Stack justifyContent="center" alignItems="center" minHeight="100vh" margin={1}>
         <CircularProgress size={60} />

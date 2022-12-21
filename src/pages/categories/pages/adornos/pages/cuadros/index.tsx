@@ -30,14 +30,14 @@ export default function CuadrosPage() {
 
         <Grid container direction="row">
           <CardLocal title={'Casa del cuadro'} img={Local1IMG} url={'/categories/adornos/cuadros/casa-del-cuadro'} />
-          <CardLocal title={'Mi palacio'} img={Local2IMG} url={'/'} />
-          <CardLocal title={'ExpoHogar'} img={Local3IMG} url={'/'} />
-          <CardLocal title={'Hogareño'} img={Local4IMG} url={'/'} />
-          <CardLocal title={'Traki'} img={Local5IMG} url={'/'} />
-          <CardLocal title={'MixHouse'} img={Local6IMG} url={'/'} />
-          <CardLocal title={'El castillo del cuadro'} img={Local7IMG} url={'/'} />
-          <CardLocal title={'Arte creativo'} img={Local8IMG} url={'/'} />
-          <CardLocal title={'DecoraTuHogar'} img={Local9IMG} url={'/'} />
+          <CardLocal title={'Mi palacio'} img={Local2IMG} />
+          <CardLocal title={'ExpoHogar'} img={Local3IMG} />
+          <CardLocal title={'Hogareño'} img={Local4IMG} />
+          <CardLocal title={'Traki'} img={Local5IMG} />
+          <CardLocal title={'MixHouse'} img={Local6IMG} />
+          <CardLocal title={'El castillo del cuadro'} img={Local7IMG} />
+          <CardLocal title={'Arte creativo'} img={Local8IMG} />
+          <CardLocal title={'DecoraTuHogar'} img={Local9IMG} />
         </Grid>
       </Container>
 
