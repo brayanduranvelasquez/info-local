@@ -12,11 +12,11 @@ export default function AboutPage() {
     <>
       <Header />
 
-      <Box sx={{ minHeight: '100%', color: '#000', textAlign: 'center', paddingY: 10 }}>
+      <Box sx={{ minHeight: '100%', color: '#000', textAlign: 'center', paddingY: 3 }}>
         <Grid container direction="row">
           <Grid item xs={12} lg={6}>
             <Stack justifyContent="center" alignItems="center" padding={3}>
-              <Box component="img" src={image1} width="100%" />
+              <Box component="img" src={image1} maxWidth="100%" loading="lazy" sx={{ maxWidth: 450 }} />
             </Stack>
           </Grid>
           <Grid item xs={12} lg={6} display="flex" justifyContent="center" alignItems="center">
@@ -25,19 +25,21 @@ export default function AboutPage() {
                 ¿Quienes somos?
               </Typography>
               <Box sx={{ maxWidth: '550px' }}>
-                <Typography variant="h5" fontWeight={500}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra,
-                  feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit
-                  non. Non commodo volutpat, pharetra, vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus.
-                </Typography>
+                <Container>
+                  <Typography variant="h5" fontWeight={500}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra,
+                    feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit
+                    non. Non commodo volutpat, pharetra, vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus.
+                  </Typography>
+                </Container>
               </Box>
             </Stack>
           </Grid>
         </Grid>
       </Box>
 
-      <Box sx={{ minHeight: '100%', background: '#1769AA', color: '#fff', textAlign: 'center', paddingY: 10 }}>
+      <Box sx={{ minHeight: '100%', background: '#1769AA', color: '#fff', textAlign: 'center', paddingY: 5 }}>
         <Stack justifyContent="center" alignItems="center">
           <Box sx={{ width: '80%', height: '100%', background: '#fff', color: '#000', paddingY: 5 }}>
             <Grid container direction="row" sx={{ height: '100%' }}>
@@ -100,31 +102,33 @@ export default function AboutPage() {
         </Stack>
       </Box>
 
-      <Box sx={{ minHeight: '100%', color: '#000', textAlign: 'center', paddingY: 10 }}>
-        <Grid container direction="row" paddingTop={7}>
+      <Box sx={{ minHeight: '100%', color: '#000', textAlign: 'center', paddingY: 3 }}>
+        <Grid container direction="row">
           <Grid item xs={12} lg={6} display="flex" justifyContent="center" alignItems="center">
             <Stack justifyContent="center" alignItems="center" gap={2}>
               <Typography variant="h3" fontWeight={500}>
                 Lorem Lorem
               </Typography>
               <Box sx={{ maxWidth: '550px' }}>
-                <Typography variant="h5" fontWeight={500}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra,
-                  feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit
-                  non. Non commodo volutpat.
-                </Typography>
+                <Container>
+                  <Typography variant="h5" fontWeight={500}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra,
+                    feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit
+                    non. Non commodo volutpat.
+                  </Typography>
+                </Container>
               </Box>
             </Stack>
           </Grid>
           <Grid item xs={12} lg={6}>
             <Stack justifyContent="center" alignItems="center" padding={3}>
-              <Box component="img" src={image2} width="100%" />
+              <Box component="img" src={image2} width="100%" loading="lazy" sx={{ maxWidth: 450 }} />
             </Stack>
           </Grid>
         </Grid>
       </Box>
 
-      <Box sx={{ minHeight: '100%', background: '#1769AA', color: '#fff', textAlign: 'center', paddingY: 10 }}>
+      <Box sx={{ minHeight: '100%', background: '#1769AA', color: '#fff', textAlign: 'center', paddingY: 5 }}>
         <Stack justifyContent="center" alignItems="center">
           <Typography variant="h3" fontWeight={800}>
             Descarga nuestra guía para saber más sobre nuestros servicios
@@ -135,36 +139,38 @@ export default function AboutPage() {
         </Stack>
       </Box>
 
-      <Box sx={{ minHeight: '100%', color: '#000', textAlign: 'center', paddingY: 10 }}>
+      <Box sx={{ minHeight: '100%', color: '#000', textAlign: 'center', paddingY: 3 }}>
         <Grid container direction="row">
           <Grid item xs={12} lg={6}>
             <Stack justifyContent="center" alignItems="center" padding={3}>
-              <Box component="img" src={image3} width="100%" />
+              <Box component="img" src={image3} width="100%" loading="lazy" sx={{ maxWidth: 450 }} />
             </Stack>
           </Grid>
           <Grid item xs={12} lg={6} display="flex" justifyContent="center" alignItems="center">
             <Stack justifyContent="center" alignItems="center" gap={2}>
               <Typography variant="h3" fontWeight={500}>
-                ¿Quienes somos?
+                Sit Amet
               </Typography>
               <Box sx={{ maxWidth: '550px' }}>
-                <Typography variant="h5" fontWeight={500}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra,
-                  feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit
-                  non. Non commodo volutpat, pharetra, vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus.
-                </Typography>
+                <Container>
+                  <Typography variant="h5" fontWeight={500}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra,
+                    feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit
+                    non. Non commodo volutpat, pharetra, vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus.
+                  </Typography>
+                </Container>
               </Box>
             </Stack>
           </Grid>
         </Grid>
       </Box>
 
-      <Box sx={{ minHeight: '100%', background: '#1769AA', color: '#fff', paddingY: 10 }}>
+      <Box sx={{ minHeight: '100%', background: '#1769AA', color: '#fff', paddingY: 5 }}>
         <Container>
           <Grid container direction="row">
             <Grid item xs={12} md={6}>
-              <Stack>
+              <Stack marginTop={3}>
                 <Typography variant="h2" fontWeight={800}>
                   Suscríbete
                 </Typography>
@@ -177,7 +183,7 @@ export default function AboutPage() {
             </Grid>
 
             <Grid item xs={12} md={6}>
-              <Stack>
+              <Stack marginTop={3}>
                 <Typography variant="h4" fontWeight={800}>
                   Correo electrónico
                 </Typography>
