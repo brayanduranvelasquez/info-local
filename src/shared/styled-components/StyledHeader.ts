@@ -5,6 +5,7 @@ const StyledStackLinks = styled(Stack)({
   flexDirection: 'row',
   justifyContent: 'center',
   alignItems: 'center',
+  userSelect: 'none',
 });
 
 const StyledLinkNav = styled(Typography)({
