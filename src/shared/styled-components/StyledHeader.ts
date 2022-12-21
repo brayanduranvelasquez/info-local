@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { Typography } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 
-const StyledStackLinks = styled(Typography)({
+const StyledStackLinks = styled(Stack)({
   flexDirection: 'row',
   justifyContent: 'center',
   alignItems: 'center',
