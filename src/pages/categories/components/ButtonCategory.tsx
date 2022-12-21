@@ -13,7 +13,7 @@ export default function ButtonCategory(props: IProps) {
   const navigate = useNavigate();
 
   return (
-    <Grid item xs={12} md={6}>
+    <Grid item xs={12} md={6} display="flex" justifyContent="center" alignItems="center">
       <StyledButtonCategory elevation={5} onClick={() => props.url && navigate(props.url)}>
         <Box sx={{ width: '10%' }} />
 
