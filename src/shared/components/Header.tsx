@@ -1,35 +1,32 @@
 import * as React from 'react';
+import { Button, Container, Stack } from '@mui/material';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import MailIcon from '@mui/icons-material/Mail';
-import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import { Button, Container, Stack } from '@mui/material';
 
+// Local
 import {
   StyledSearch,
   StyledSearchIconWrapper,
   StyledInputBase,
 } from '../../pages/home/styled-components/InputSearchHeader';
+import { useNavigate } from 'react-router-dom';
+import { StyledLinkNav, StyledStackLinks } from '../styled-components/StyledHeader';
 
 export default function Header() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState<null | HTMLElement>(null);
+  const navigate = useNavigate();
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
 
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
@@ -61,8 +58,17 @@ export default function Header() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem sx={{ justifyContent: 'center' }} onClick={() => navigate('/categories')}>
+        <Typography>Categorías</Typography>
+      </MenuItem>
+      <MenuItem sx={{ justifyContent: 'center' }} onClick={() => navigate('/about')}>
+        <Typography>Acerca de</Typography>
+      </MenuItem>
+      <MenuItem sx={{ justifyContent: 'center' }}>
+        <Button variant="contained" onClick={() => navigate('/register')}>
+          Registrar
+        </Button>
+      </MenuItem>
     </Menu>
   );
 
@@ -83,49 +89,38 @@ export default function Header() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
+      <MenuItem sx={{ justifyContent: 'center' }} onClick={() => navigate('/categories')}>
+        <Typography>Categorías</Typography>
       </MenuItem>
-      <MenuItem>
-        <IconButton size="large" aria-label="show 17 new notifications" color="inherit">
-          <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
+      <MenuItem sx={{ justifyContent: 'center' }} onClick={() => navigate('/about')}>
+        <Typography>Acerca de</Typography>
       </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          size="large"
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
+      <MenuItem sx={{ justifyContent: 'center' }}>
+        <Button variant="contained" onClick={() => navigate('/register')}>
+          Registrar
+        </Button>
       </MenuItem>
     </Menu>
   );
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ background: '#FFFFFF', color: '#000', minHeight: '56px' }}>
+      <AppBar position="static" sx={{ background: '#FFFFFF', color: '#000' }}>
         <Container>
           <Toolbar sx={{ display: 'flex' }}>
-            <Stack flex={0.8}>
-              <Typography variant="h4" fontWeight="bold" component="div" sx={{ display: { xs: 'none', sm: 'block' } }}>
+            <Stack>
+              <Typography
+                variant="h5"
+                fontWeight="bold"
+                component="div"
+                sx={{ '&:hover': { cursor: 'pointer' } }}
+                onClick={() => navigate('/')}
+              >
                 InfoLocal
               </Typography>
             </Stack>
 
-            <Stack flex={2}>
+            <Stack flex={2} marginX={2}>
               <StyledSearch
                 sx={{
                   background: '#c9c9c9',
@@ -138,22 +133,21 @@ export default function Header() {
                 <StyledSearchIconWrapper>
                   <SearchIcon />
                 </StyledSearchIconWrapper>
-                <StyledInputBase placeholder="Buscar..." inputProps={{ 'aria-label': 'buscar' }} />
+                <StyledInputBase
+                  placeholder="Buscar un local, negocio, empresa, categoría, subcategoría..."
+                  inputProps={{ 'aria-label': 'buscar' }}
+                />
               </StyledSearch>
             </Stack>
 
             <Stack>
-              <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
-                <Typography fontSize="20px" fontWeight="bold">
-                  Categorias
-                </Typography>
-                <Typography fontSize="20px" fontWeight="bold">
-                  Acerca de
-                </Typography>
+              <StyledStackLinks sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
+                <StyledLinkNav onClick={() => navigate('/categories')}>Categorías</StyledLinkNav>
+                <StyledLinkNav onClick={() => navigate('/about')}>Acerca de</StyledLinkNav>
                 <Button variant="contained" color="primary">
                   Registrar
                 </Button>
-              </Box>
+              </StyledStackLinks>
               <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                 <IconButton
                   size="large"

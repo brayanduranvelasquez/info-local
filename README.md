@@ -1,6 +1,6 @@
-## Template base
+## Info local
 
-Template base.
+Info local
 
 ### Construido en
 
@@ -26,7 +26,8 @@ Ruta inicial.
 ### Otros comandos
 
 - `dev-host`: Para poder mostrar la aplicación mediante la ruta del host local.
-- `build`: Desplegar la aplicacion para producción y creará una carpeta llamada dist.
+- `build`: Construir la aplicacion para producción y creará una carpeta llamada dist.
+- `deploy`: Desplegar la carpeta dist a github pages.
 - `lint`: Verificar errores en el código.
 - `lint-fix`: Tratar de solucionar los errores que se presentan.
 - `preview`: Arrancará el servidor web estático local que sirve los archivos desde dist en http://localhost:4173.
@@ -34,22 +35,13 @@ Ruta inicial.
 
 ### Dependencias
 
-1. [React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/)
-2. [Material UI](https://mui.com/)
-3. [Material UI Icons](https://mui.com/material-ui/material-icons/#main-content)
-4. [React Helmet](https://www.npmjs.com/package/react-helmet)
-5. [React Hook Forms](https://react-hook-form.com/)
-6. [Redux Toolkit](https://redux-toolkit.js.org/)
-7. [React Router Dom](https://reactrouter.com/en/v6.3.0/)
-8. [React Toastify](https://fkhadra.github.io/react-toastify/introduction/)
-9. [React Multi Carousel](https://www.npmjs.com/package/react-multi-carousel)
-10. [React Scratchcard V2](https://www.npmjs.com/package/react-scratchcard-v2)
-11. [React To Print](https://github.com/gregnb/react-to-print#readme)
-12. [Axios](https://axios-http.com/)
-13. [Sweet Alert 2](https://sweetalert2.github.io/)
-14. [Eslint](https://github.com/eslint/eslint)
-15. [Prettier](https://github.com/prettier/prettier)
-16. [Mui-datatables](https://www.npmjs.com/package/mui-datatables)
+1. [Material UI](https://mui.com/)
+2. [Material UI Icons](https://mui.com/material-ui/material-icons/#main-content)
+3. [React Helmet](https://www.npmjs.com/package/react-helmet)
+4. [React Router Dom](https://reactrouter.com/en/v6.3.0/)
+5. [React Multi Carousel](https://www.npmjs.com/package/react-multi-carousel)
+6. [Eslint](https://github.com/eslint/eslint)
+7. [Prettier](https://github.com/prettier/prettier)
 
 ### Eslint y Prettier
 
