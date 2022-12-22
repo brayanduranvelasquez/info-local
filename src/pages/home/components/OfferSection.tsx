@@ -13,7 +13,7 @@ export default function OfferSection() {
       <Container>
         <Stack justifyContent="center" alignItems="center" mb={4}>
           <Typography variant="h4" fontWeight={800}>
-            ¿Que ofrecemos para ti?
+            ¿Qué ofrecemos para ti?
           </Typography>
         </Stack>
 

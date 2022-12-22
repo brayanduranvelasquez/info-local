@@ -10,7 +10,7 @@ export default function RegisterSection() {
         <Stack justifyContent="center" alignItems="center" textAlign="center">
           <Box paddingX={4} paddingY={2} width="100%" maxWidth={700}>
             <Typography variant="h4" fontWeight={500}>
-              ¿Como puedo registrar mi empresa, local, negocio o emprendimiento?
+              ¿Cómo puedo registrar mi empresa, local, negocio o emprendimiento?
             </Typography>
           </Box>
           <Box>
