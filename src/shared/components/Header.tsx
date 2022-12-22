@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Button, Container, Stack } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -17,7 +18,6 @@ import {
   StyledSearchIconWrapper,
   StyledInputBase,
 } from '../../pages/home/styled-components/InputSearchHeader';
-import { useNavigate } from 'react-router-dom';
 import { StyledLinkNav, StyledStackLinks } from '../styled-components/StyledHeader';
 
 export default function Header() {
@@ -133,10 +133,7 @@ export default function Header() {
                 <StyledSearchIconWrapper>
                   <SearchIcon />
                 </StyledSearchIconWrapper>
-                <StyledInputBase
-                  placeholder="Buscar un local, negocio, empresa, categoría, subcategoría..."
-                  inputProps={{ 'aria-label': 'buscar' }}
-                />
+                <StyledInputBase fullWidth placeholder="Buscar..." inputProps={{ 'aria-label': 'buscar' }} />
               </StyledSearch>
             </Stack>
 

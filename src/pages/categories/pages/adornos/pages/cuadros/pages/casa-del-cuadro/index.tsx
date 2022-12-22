@@ -1,5 +1,6 @@
-import { Box, Grid, Stack, Typography, Divider, Container } from '@mui/material';
+import { Box, Grid, Stack, Typography, Divider, Container, Skeleton } from '@mui/material';
 import Carousel from 'react-multi-carousel';
+import { useState } from 'react';
 
 import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -19,13 +20,19 @@ import imageExample2 from './assets/2.jpg';
 import imageExample3 from './assets/3.jpg';
 
 export default function CasaDelCuadroPage() {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
   return (
     <>
-      <Carousel responsive={RESPONSIVE}>
-        <Box height="100vh" maxHeight={650} sx={{ backgroundImage: `url(${imageExample1})` }} />
-        <Box height="100vh" maxHeight={650} sx={{ backgroundImage: `url(${imageExample2})` }} />
-        <Box height="100vh" maxHeight={650} sx={{ backgroundImage: `url(${imageExample3})` }} />
-      </Carousel>
+      {isLoading && <Skeleton variant="rectangular" animation="wave" sx={{ height: '100vh', maxHeight: 650 }} />}
+      {!isLoading && (
+        <Carousel responsive={RESPONSIVE}>
+          <Box height="100vh" maxHeight={650} sx={{ backgroundImage: `url(${imageExample1})` }} />
+          <Box height="100vh" maxHeight={650} sx={{ backgroundImage: `url(${imageExample2})` }} />
+          <Box height="100vh" maxHeight={650} sx={{ backgroundImage: `url(${imageExample3})` }} />
+        </Carousel>
+      )}
+
       <Container sx={{ marginY: 3 }}>
         <Breadcrumb />
 
@@ -67,6 +74,10 @@ export default function CasaDelCuadroPage() {
           <SocialMedia icon={<YouTubeIcon fontSize="large" />} message={'Ir a Youtube'} />
         </Grid>
       </Container>
+
+      <Box component="img" src={imageExample1} display={'none'} onLoad={() => setIsLoading(false)} />
+      <Box component="img" src={imageExample2} display={'none'} onLoad={() => setIsLoading(false)} />
+      <Box component="img" src={imageExample3} display={'none'} onLoad={() => setIsLoading(false)} />
     </>
   );
 }
