@@ -28,7 +28,7 @@ export default function CategoriesPage() {
             <ButtonCategory title={'Comida'} />
             <ButtonCategory title={'Medicina'} />
             <ButtonCategory title={'Vestimenta'} />
-            <ButtonCategory title={'Electrodomésticos'} />
+            <ButtonCategory title={'Juguetes'} />
             <ButtonCategory title={'Eventos'} />
             <ButtonCategory title={'Arte'} />
             <ButtonCategory title={'Ferretería'} />

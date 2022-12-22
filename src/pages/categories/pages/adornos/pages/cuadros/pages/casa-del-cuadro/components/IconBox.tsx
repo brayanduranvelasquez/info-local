@@ -7,7 +7,7 @@ interface IProps {
 
 export default function IconBox(props: IProps) {
   return (
-    <Stack direction="row" my={3} ml={3} columnGap={1} justifyContent="flex-start" alignItems="center">
+    <Stack direction="row" my={3} ml={1.5} columnGap={1} justifyContent="flex-start" alignItems="center">
       {props.icon}
 
       <Typography variant="h5" fontWeight="bold">
