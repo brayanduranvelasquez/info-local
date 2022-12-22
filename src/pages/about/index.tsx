@@ -24,7 +24,7 @@ export default function AboutPage() {
             <Grid item xs={12} lg={6} display="flex" justifyContent="center" alignItems="center">
               <Stack justifyContent="center" alignItems="center" gap={2}>
                 <Typography variant="h3" fontWeight={500}>
-                  ¿Quienes somos?
+                  ¿Quiénes somos?
                 </Typography>
                 <Box sx={{ maxWidth: '550px' }}>
                   <Container>
@@ -97,9 +97,9 @@ export default function AboutPage() {
                     }}
                   >
                     <Typography fontSize="50px" fontWeight="bold" sx={{ color: '#1769AA' }}>
-                      10+
+                      20+
                     </Typography>
-                    <Typography fontWeight="bold">Categorias Registradas</Typography>
+                    <Typography fontWeight="bold">Categorías Registradas</Typography>
                   </Box>
                 </Grid>
               </Grid>
